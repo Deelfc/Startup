@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page</title>
+    <link rel="stylesheet" href="./Startup Landing Page_files/startup.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <h1 class="header__title">Start<span>up</span></h1>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="http://127.0.0.1:5500/index.html#" class="header__link">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/index.html#" class="header__link">About Us</a></li>
+          <li><a href="http://127.0.0.1:5500/index.html#" class="header__link">Contact Us</a></li>
+          <li><a href="http://127.0.0.1:5500/index.html#" class="header__link">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="hero">
+        <div class="hero__text">
+          <h2 class="hero__title">Startup Landing Page</h2>
+          <p class="hero__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi
+            dolor maxime dolorem eligendi voluptates cupiditate sequi harum
+            placeat doloremque quas dolores architecto delectus, magnam libero
+            expedita repudiandae earum voluptatem quos tenetur atque.
+            Voluptatem, officiis iusto? Officiis error cupiditate veritatis
+            blanditiis vitae provident non magni laboriosam voluptatum adipisci
+            accusantium magnam laudantium, amet aspernatur animi autem voluptate
+            perspiciatis ab hic enim delectus sed? Voluptatem blanditiis numquam
+            neque iusto. Dignissimos a reiciendis suscipit voluptate nesciunt
+            sapiente, aspernatur aliquam quae aut amet, eligendi id numquam
+            pariatur corrupti ad iste dolor eaque modi dolore dolorem
+            repellendus doloribus accusamus! Odit natus ad velit animi a.
+          </p>
+          <button class="button button--primary">Login</button>
+        </div>
+        <div class="hero__image">
+          <img src="./Startup Landing Page_files/jeff-bezos.png" alt="Jeff Bezos doing namaste in sherwani" class="hero__img">
+        </div>
+      </section>
+
+      <section class="contact">
+        <h3 class="contact__title">Contact Us</h3>
+        <form class="contact__form">
+          <div class="contact__input-group">
+            <input type="text" placeholder="Name" class="contact__input">
+          </div>
+          <div class="contact__input-group">
+            <input type="email" placeholder="Email" class="contact__input">
+          </div>
+          <div class="contact__input-group">
+            <input type="text" placeholder="Mobile Number" class="contact__input">
+            <input type="text" placeholder="City" class="contact__input">
+          </div>
+          <button type="submit" class="button button--primary">
+            Submit Form
+          </button>
+        </form>
+      </section>
+
+      <section class="startup-table">
+        <table class="table">
+          <thead class="table__header">
+            <tr>
+              <th>SNO.</th>
+              <th>Startup Name</th>
+              <th>Startup Description</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr>
+              <td>1.</td>
+              <td>WowIndia</td>
+              <td>A startup with WOW Ideas.</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Lorem Ipsum</td>
+              <td>Lorem Ipsum Text</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Lorem Ipsum</td>
+              <td>Lorem Ipsum Text</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Lorem Ipsum</td>
+              <td>Lorem Ipsum Text</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>Lorem Ipsum</td>
+              <td>Lorem Ipsum Text</td>
+            </tr>
+            <tr>
+              <td>6.</td>
+              <td>Lorem Ipsum</td>
+              <td>Lorem Ipsum Text</td>
+            </tr>
+          </tbody>
+          <tfoot class="table__footer">
+            <tr>
+              <td>00.</td>
+              <td>Final Footer</td>
+              <td>Lorem Ipsum Text</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
